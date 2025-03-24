@@ -8,7 +8,7 @@ if (isset($_POST["btn"])) {
 
     $hobbies = $_POST["hobbies"];
 
-    $color = (strlen($firstName) > 5) ? "green" : "red";
+    $color = strlen($firstName) + strlen($lastName) > 5 ? "green" : "red";
 }
 
 ?>
