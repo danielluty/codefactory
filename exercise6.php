@@ -9,6 +9,8 @@ if (isset($_POST["btn"])) {
     $color = strlen($firstName) + strlen($lastName) > 5 ? "green" : "red";
 }
 
+// Exercise 6 was written as "inside HTML" - is that necessary?
+
 ?>
 
 <!DOCTYPE html>
@@ -77,3 +79,4 @@ if (isset($_POST["btn"])) {
 </body>
 
 </html>
+
