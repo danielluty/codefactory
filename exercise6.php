@@ -5,9 +5,7 @@ if (isset($_POST["btn"])) {
     $firstName = $_POST["firstName"];
     $lastName = $_POST["lastName"];
     $age = $_POST["age"];
-
     $hobbies = $_POST["hobbies"];
-
     $color = strlen($firstName) + strlen($lastName) > 5 ? "green" : "red";
 }
 
@@ -21,14 +19,34 @@ if (isset($_POST["btn"])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        html {
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
         form {
             display: flex;
             flex-direction: column;
-            width: 200px;
+            width: 300px;
+        }
+
+        label {
+            margin-bottom: 3px;
         }
 
         input {
             margin-bottom: 1rem;
+        }
+
+        div {
+            width: 300px;
         }
     </style>
 </head>
